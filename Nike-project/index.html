@@ -7,12 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>Nike</title>
 </head>
 
 <body>
     <div id="app" class="app-wrapper">
-
+        <div class="shoe-card-wrapper container m-auto">
+            <div class="shoe-card">
+                <img src="/Nike-project/assets/images/nikeSbLogo.png" alt="" class="logo">
+            </div>
+            <main class="shoe d-flex justify-content-around">
+                <div class="shoe-viev d-flex flex-column justify-content-between">
+                    <img src="./assets/images/Nike-SB-Stefan-Janoski-Max.png" alt="" class="shoe__img">
+                    <div class="radio">
+                        <label class="radio-container">.
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark black"></span>
+                        </label>
+                        <label class="radio-container">.
+                            <input type="radio" name="radio">
+                            <span class="checkmark white"></span>
+                        </label>
+                        <label class="radio-container">.
+                            <input type="radio" name="radio">
+                            <span class="checkmark orange"></span>
+                        </label>
+                        <label class="radio-container">.
+                            <input type="radio" name="radio">
+                            <span class="checkmark blue"></span>
+                        </label>
+                    </div>
+                </div>
+                <section class="shoe__info col-4">
+                    <h2 class="shoe__name">Nike SB Stefan janoski max</h2>
+                    <p class="shoe-info__description">Unisex Skateboarding Shoe</p>
+                    <div class="rating">
+                        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                    </div>
+                    <form action="" id="size_and_qty">
+                        <select name="size" id="size" class="input-style">
+                            <optgroup label="size">
+                                <option value="none">Size</option>
+                            </optgroup>
+                            <optgroup label="Woman">
+                                <option value="US9">US9</option>
+                                <option value="US9">US9</option>
+                                <option value="US9">US9</option>
+                                <option value="US9">US9</option>
+                            </optgroup>
+                            <optgroup label="Man">
+                                <option value="US9">US9</option>
+                                <option value="US9">US9,5</option>
+                                <option value="US9">US10</option>
+                                <option value="US9">US10,5</option>
+                            </optgroup>
+                        </select>
+                        <select name="size" id="qnt" class="input-style">
+                            <option value="none">Qty</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <input type="submit" class="submit-btn" value="Add to cart">
+                    </form>
+                </section>
+            </main>
+        </div>
     </div>
 </body>
 
