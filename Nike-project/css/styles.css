@@ -1,0 +1,152 @@
+.app-wrapper {
+    background-image: url(/Nike-project/assets/images/main-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+}
+.shoe-card-wrapper {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #111a28;
+    width: 700px;
+}
+.shoe {
+    margin: 60px 0 20px;
+    color: #e1e1e1;
+}
+.shoe__name {
+    margin: 0;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-align: start;
+}
+.shoe-info__description {
+    margin: 10px 0 0;
+    font-weight: 100;
+    font-size: 14px;
+}
+/* star rating */
+.rating {
+    margin: 10px 0 0;
+    text-align: left;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     color: #f7bf16;
+  }
+/* star rating end */
+#size_and_qty {
+      margin: 10px 0 0;
+  }
+.input-style {
+      padding: 5px 10px;
+      color: #e1e1e1;
+      background-color: #111a28;
+      width: 80px;
+      outline: none;
+      text-align: center;
+      font-weight: 100;
+  }
+.submit-btn {
+      width: 100%;
+      margin: 30px 0 0;
+      padding: 10px 0;
+      border: 1px solid #e1e1e1;
+      background-color: #111a28;
+      color: #e1e1e1;
+      font-weight: 100;
+  }
+.submit-btn:hover {
+      background-color: #202835;
+  }
+/* radio buttons for collor */
+.radio {
+      display: flex;
+      justify-content: center;
+      /* margin: 100px auto 0; */
+  }
+.radio-container {
+    color: transparent;
+    display: block;
+    position: relative;
+    padding-left: 17px;
+    margin-top: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+.black {
+      background-color: #1f1f1f;
+  }
+.white {
+    background-color: #ffffff;
+}
+.orange {
+    background-color: #ed3333;
+}
+.blue {
+    background-color: #29e3ea;
+}
+  /* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+    border: 2px solid grey;
+  }
+.radio-container input:checked ~ .black {
+    background-color: #1f273f;
+  }
+.radio-container input:checked ~ .white {
+    background-color: #ffffff;
+  }
+.radio-container input:checked ~ .orange {
+    background-color: #ed3333;
+  }
+.radio-container input:checked ~ .blue {
+    background-color: #29e3ea;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+}
+  
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+}
+ 
